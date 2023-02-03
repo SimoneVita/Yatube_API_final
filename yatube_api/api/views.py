@@ -5,7 +5,7 @@ from rest_framework.viewsets import (
 from .serializers import (
     CommentSerializer, GroupSerializer, PostSerializer, FollowSerializer)
 from posts.models import (
-    Group, Post, Comment, Follow, User)
+    Group, Post, Comment, User)
 from django.shortcuts import get_object_or_404
 from .exceptions import PermissionDenied
 from .permissions import UserIsAuthorOrReadOnly
