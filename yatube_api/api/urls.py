@@ -1,9 +1,7 @@
-from rest_framework.routers import DefaultRouter
 from django.urls import include, path
-from .views import (
-    PostViewSet, GroupViewSet, CommentViewSet, FollowViewSet
-)
+from rest_framework.routers import DefaultRouter
 
+from .views import CommentViewSet, FollowViewSet, GroupViewSet, PostViewSet
 
 routers = DefaultRouter()
 routers.register(

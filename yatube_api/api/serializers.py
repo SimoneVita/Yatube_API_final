@@ -1,10 +1,8 @@
-from rest_framework.serializers import (
-    ModelSerializer, ValidationError, CurrentUserDefault)
-from rest_framework.relations import (
-    SlugRelatedField, StringRelatedField)
+from posts.models import Comment, Follow, Group, Post, User
+from rest_framework.relations import SlugRelatedField, StringRelatedField
+from rest_framework.serializers import (CurrentUserDefault, ModelSerializer,
+                                        ValidationError)
 from rest_framework.validators import UniqueTogetherValidator
-from posts.models import (
-    Comment, Post, Group, Follow, User)
 
 
 class CommentSerializer(ModelSerializer):
